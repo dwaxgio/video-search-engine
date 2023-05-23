@@ -1,48 +1,101 @@
-.container {
-  width: 500px;
-  margin: 0 auto;
-}
-
-h1 {
-  text-align: center;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid black;
-}
-
-button {
-  background-color: blue;
-  color: white;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-#results {
-  display: none;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.result {
-  padding: 10px;
-  border-bottom: 1px solid black;
-}
-
-.result img{
-    width: 100px;
-    float: left;
-    margin-right: 10px;
-}
-
-.result h4{
-    margin: 0
-}
-
-.result p{
+body {
+    font-family: sans-serif;
     margin: 0;
-}
+    padding: 0;
+  }
+  
+  .container {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .gcse-search {
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  #results {
+    margin-top: 10px;
+  }
+  
+  .video-result {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .video-result img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+  }
+  
+  .video-result .info {
+    margin-left: 10px;
+  }
+  
+  .video-result .title {
+    font-size: 16px;
+  }
+  
+  .video-result .views {
+    font-size: 12px;
+    transform: scale(1);
+    transform-origin: 0 0;
+  }
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .preview-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .close-btn,
+  .visit-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+
+  /*  */
+  .gsc-results-wrapper-overlay {
+    width: 100px;
+    margin: 0 auto;
+    background-color: #000;
+  }
+
+  .gsc-results-wrapper-visible{
+    width: 100px;
+    margin: 0 auto;
+    background-color: #000;
+  }
+
+  .gsc-wrapper{
+    background-color: #000;
+  }
