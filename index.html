@@ -1,35 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Simple Video Search Engine</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./css/index.css" />
+
+    <title>Simple Video Search Engine</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Simple Video Search Engine</h1>
+      <div class="gcse-search"></div>
+      <button>Next -></button>
+    </div>
+   
+
     <script
       async
       src="https://cse.google.com/cse.js?cx=c181a49ecc3cc4afa"
     ></script>
+
     <script src="./js/index.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Simple Video Search Engine</h1>
-      <div class="gcse-search" data-enableAutoComplete="true"></div>
-      <!-- <div class="gcse-searchresults-only"></div> -->
-      <button onclick="doSearch()">Search</button>
-      <div id="results"></div>
-      <form action="/index.html" method="get" role="search">
-        <!-- personalized input -->
-        <input autocomplete="off" name="q" placeholder="search it" title="Enter search here" type="text"/>
-      </form>
-      <div id="preview-overlay" class="overlay">
-        <div class="preview-content">
-          <button onclick="closePreview()" class="close-btn">Close</button>
-          <button onclick="openVideoLink()" class="visit-btn">Visit</button>
-        </div>
-      </div>
-      <div id="navigation">
-        <button onclick="navigate('prev')">Prev</button>
-        <button onclick="navigate('next')">Next</button>
-      </div>
-    </div>
   </body>
 </html>
