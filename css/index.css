@@ -52,10 +52,7 @@
   left: 0;
   right: 0;
   z-index: -1;
-  /* top: calc(100% - 10px); */
   height: 80%;
-  /* margin-top: 100px; */
-
   border-radius: 25px;
 }
 
@@ -67,8 +64,11 @@
 .gsc-webResult.gsc-result {
   background-color: #ffffff;
   border-radius: 25px;
-  /* margin-top: 50px; */
   margin: 10px;
+}
+
+.gsc-expansionArea .gsc-webResult.gsc-result {
+  margin-bottom: 10px;
 }
 
 /* RESULT BUTTON CLOSE */
@@ -105,6 +105,12 @@
   text-align: center;
   padding: 10px;
   border-radius: 25px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.gcsc-find-more-on-google-branding {
+  remove: both;
 }
 
 /* MODAL */
@@ -113,22 +119,22 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50vw;
+  width: 49vw;
   height: 100%;
   background-color: #000000;
-  border: 1px solid #ccc;
   padding: 10px;
   z-index: 1000;
+  border-radius: 25px;
 }
 
 #modal-content {
   padding: 20px;
+  margin: 0 auto;
 }
 
 #img-modal {
-  display: block;
   margin: 0 auto;
-  /* vertical-align: middle; */
+  margin-top: 0 auto;
 }
 
 #p-modal-title {
@@ -136,30 +142,34 @@
 }
 
 #modal-buttons {
+  position: fixed;
+  bottom: 20px;
+  width: 90%;
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  bottom: 0;
 }
 
 #btn-modal-redirect {
   float: left;
-  margin-left: 10px;
-
   background-color: #2a8cff;
   color: #fff;
-  padding: 5px 10px;
-  border-radius: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
 #close-modal {
   float: right;
-  margin-right: 10px;
 
   background-color: #ccc;
   color: #fff;
-  padding: 5px 10px;
-  border-radius: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
   cursor: pointer;
 }

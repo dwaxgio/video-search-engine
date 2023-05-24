@@ -26,11 +26,6 @@ function checkElementExistence() {
     var hideElements = document.querySelector(".gsc-above-wrapper-area");
     hideElements.style.display = "none";
 
-    // const youtubeWatch = document.querySelector(
-    //   ".gs-bidi-start-align gs-visibleUrl.gs-visibleUrl-breadcrumb"
-    // );
-
-    // youtubeWatch.style.display = "none";
     // ** GET VIDEOS
 
     // Get all the div elements with the class "gsc-webResult gsc-result"
