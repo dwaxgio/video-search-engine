@@ -17,11 +17,20 @@ function checkElementExistence() {
 
     // Perform your desired action here
     console.log("Element found!");
-    // You can trigger an alert or execute any other code *******
+    // ************* You can trigger an alert or execute any other code *******
+    document
+      .querySelector(".gsc-results-wrapper-overlay.gsc-results-wrapper-visible")
+      .classList.remove("gsc-results-wrapper-overlay");
 
     // ** hide unwanted sections:
     var hideElements = document.querySelector(".gsc-above-wrapper-area");
     hideElements.style.display = "none";
+
+    // const youtubeWatch = document.querySelector(
+    //   ".gs-bidi-start-align gs-visibleUrl.gs-visibleUrl-breadcrumb"
+    // );
+
+    // youtubeWatch.style.display = "none";
     // ** GET VIDEOS
 
     // Get all the div elements with the class "gsc-webResult gsc-result"
@@ -88,6 +97,39 @@ function checkElementExistence() {
         });
       }
     }
+
+    // ** PAGINATION
+    const paginationDiv = document.querySelector(".gsc-cursor-box");
+    const prevButton = document.createElement("button");
+    prevButton.textContent = "<-PREV";
+    prevButton.id = "btn-prev";
+    const currentPageNumber = document.createElement("span");
+    currentPageNumber.textContent = "1";
+    const nextButton = document.createElement("button");
+    nextButton.textContent = "NEXT ->";
+    nextButton.id = "btn-next";
+
+    paginationDiv.innerHTML = "";
+
+    if (
+      paginationDiv.querySelector(
+        ".gsc-cursor-page.gsc-cursor-current-page"
+      ) === null
+    ) {
+      paginationDiv.appendChild(nextButton);
+    } else {
+      paginationDiv.appendChild(prevButton);
+      paginationDiv.appendChild(currentPageNumber);
+      paginationDiv.appendChild(nextButton);
+    }
+
+    prevButton.addEventListener("click", function () {
+      // Go to previous page
+    });
+
+    nextButton.addEventListener("click", function () {
+      // Go to next page
+    });
   }
 }
 

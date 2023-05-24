@@ -4,8 +4,21 @@
   background-color: #fafafa;
   text-align: center;
   height: 100%;
+  border-radius: 25px;
 }
 
+/* H1 TITLE */
+#h1-title {
+  border-radius: 25px;
+  padding-top: 30px;
+  text-indent: 10px;
+  padding-left: 10px;
+}
+
+#h1-title-logo {
+  max-width: 30px;
+  max-height: 30px;
+}
 
 .gsc-modal-background-image.gsc-modal-background-image-visible {
   display: none;
@@ -17,9 +30,23 @@
   z-index: 1;
 }
 
+/* Search bar input */
+#gsc-iw-id1 {
+  border-radius: 25px;
+  padding: 10px;
+}
+
+/* Search bar button */
+.gsc-search-button.gsc-search-button-v2 {
+  border-radius: 25px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 /* Result container */
 .gsc-results-wrapper-overlay.gsc-results-wrapper-visible {
-  width: 50vw;
+  width: 45vw;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -27,7 +54,57 @@
   z-index: -1;
   /* top: calc(100% - 10px); */
   height: 80%;
-  margin-top: 100px;
+  /* margin-top: 100px; */
+
+  border-radius: 25px;
+}
+
+.gsc-control-cse.gsc-control-cse-es {
+  background-color: #fafafa;
+}
+
+/* Result card container */
+.gsc-webResult.gsc-result {
+  background-color: #ffffff;
+  border-radius: 25px;
+  /* margin-top: 50px; */
+  margin: 10px;
+}
+
+/* RESULT BUTTON CLOSE */
+.gsc-results-close-btn.gsc-results-close-btn-visible {
+  display: none;
+}
+
+/* PAGINATION */
+.gsc-cursor-box.gs-bidi-start-align {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+#btn-prev {
+  border: none;
+  box-shadow: none;
+  color: black;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+#btn-next {
+  border: none;
+  box-shadow: none;
+  color: black;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.gcsc-more-maybe-branding-root {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 25px;
 }
 
 /* MODAL */
@@ -46,7 +123,6 @@
 
 #modal-content {
   padding: 20px;
-  
 }
 
 #img-modal {
@@ -55,7 +131,7 @@
   /* vertical-align: middle; */
 }
 
-#p-modal-title{
+#p-modal-title {
   color: #fff;
 }
 
