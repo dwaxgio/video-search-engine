@@ -52,15 +52,15 @@ function checkElementExistence() {
           // Get the title from the clicked element
           var titleElement = this.querySelector(".gs-title");
           var title = titleElement.textContent;
-          //image
-          // const img = document.querySelector(".gs-image");
-          // const src = img.href;
-          // console.log(src); // prints title
+          // IMAGE
+
           const imgElement = this.querySelector("img");
           const src = imgElement.src;
 
-          // Display an alert with the title
-          // alert("Title: " + title);
+          // URL
+          const songURL = document.querySelector(".gs-image");
+          const URLsrc = songURL.href;
+          console.log(URLsrc); // prints URL
 
           // MODAL
           var modal = document.getElementById("modal-container");
@@ -70,7 +70,14 @@ function checkElementExistence() {
 
           const imgElementUI = document.getElementById("img-modal");
           imgElementUI.src = src;
-          console.log(src)
+
+          const btnModalRedirect =
+            document.getElementById("btn-modal-redirect");
+
+          btnModalRedirect.onclick = function () {
+            window.open(URLsrc);
+            modal.style.display = "none";
+          };
 
           closeButton.onclick = function () {
             modal.style.display = "none";
