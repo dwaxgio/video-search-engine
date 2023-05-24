@@ -22,18 +22,3 @@
   z-index: -1;
   top: 90%;
 }
-
-
-/* Hide all query results, except the ones from youtube */
-/* .gsc-webResult.gsc-result {
-  display: none;
-}
-
-.gsc-webResult.gsc-result:not(
-  div.gs-webResult.gs-result > div.gsc-thumbnail-inside > div.gs-title > a.gs-title[href="https://www.youtube.com/watch?v=7NK_JOkuSVY"] > span.gs-snippet[innerHTML="9/02/2023 <b>...</b> 44M views 3 months ago #<b>LinkinPark</b> #Meteora #Meteroa20. Download/Stream Lost : http://lprk.co/lost Video Credits: … Show more. Show more."]
-) {
-  display: block;
-} */
-
-
-
