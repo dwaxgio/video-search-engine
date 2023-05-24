@@ -7,7 +7,15 @@ function checkElementExistence() {
   );
 
   if (overlayElement) {
-    // Element exists, perform your desired action here
+    // Check if the action has already been performed
+    if (overlayElement.dataset.actionPerformed === "true") {
+      return; // Exit the function if action has already been performed
+    }
+
+    // Mark the action as performed
+    overlayElement.dataset.actionPerformed = "true";
+
+    // Perform your desired action here
     console.log("Element found!");
     // You can trigger an alert or execute any other code *******
 
@@ -38,21 +46,21 @@ function checkElementExistence() {
       // Delete the element if it doesn't match the pattern
       if (!isValidElement) {
         element.parentNode.removeChild(element);
+      } else {
+        // Add a click event listener to the element
+        element.addEventListener("click", function () {
+          // Get the title from the clicked element
+          var titleElement = this.querySelector(".gs-title");
+          var title = titleElement.textContent;
+
+          // Display an alert with the title
+          alert("Title: " + title);
+        });
       }
     }
-
-    // ** alert when a result is pressed:
-    // Add a click event listener to each element
-    // for (var i = 0; i < elements.length; i++) {
-    //   var element = elements[i];
-
-    //   element.addEventListener("click", function () {
-    //     // alert("Div clicked!");
-    //     console.log("Div clicked!");
-    //   });
-    // }
   }
 }
+
 
 // Function to be called when DOM changes
 function handleDOMChanges() {
