@@ -52,6 +52,12 @@ function checkElementExistence() {
           // Get the title from the clicked element
           var titleElement = this.querySelector(".gs-title");
           var title = titleElement.textContent;
+          //image
+          // const img = document.querySelector(".gs-image");
+          // const src = img.href;
+          // console.log(src); // prints title
+          const imgElement = this.querySelector("img");
+          const src = imgElement.src;
 
           // Display an alert with the title
           // alert("Title: " + title);
@@ -61,6 +67,10 @@ function checkElementExistence() {
           var closeButton = document.getElementById("close-modal");
           var pModalTitle = document.getElementById("p-modal-title");
           pModalTitle.innerHTML = title;
+
+          const imgElementUI = document.getElementById("img-modal");
+          imgElementUI.src = src;
+          console.log(src)
 
           closeButton.onclick = function () {
             modal.style.display = "none";

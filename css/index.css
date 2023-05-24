@@ -1,6 +1,8 @@
 #container {
   width: 50vw;
   margin: 0 auto;
+  background-color: #fafafa;
+
 }
 
 .gsc-modal-background-image.gsc-modal-background-image-visible {
