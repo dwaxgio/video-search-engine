@@ -58,7 +58,7 @@ function checkElementExistence() {
           const src = imgElement.src;
 
           // URL
-          const songURL = document.querySelector(".gs-image");
+          const songURL = this.querySelector(".gs-image");
           const URLsrc = songURL.href;
           console.log(URLsrc); // prints URL
 
