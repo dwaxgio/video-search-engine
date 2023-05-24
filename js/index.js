@@ -54,13 +54,25 @@ function checkElementExistence() {
           var title = titleElement.textContent;
 
           // Display an alert with the title
-          alert("Title: " + title);
+          // alert("Title: " + title);
+
+          // MODAL
+          var modal = document.getElementById("modal-container");
+          var closeButton = document.getElementById("close-modal");
+          var pModalTitle = document.getElementById("p-modal-title");
+          pModalTitle.innerHTML = title;
+
+          closeButton.onclick = function () {
+            modal.style.display = "none";
+          };
+
+          // To open the modal, use the following code:
+          modal.style.display = "block";
         });
       }
     }
   }
 }
-
 
 // Function to be called when DOM changes
 function handleDOMChanges() {
